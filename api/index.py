@@ -12,7 +12,7 @@ def home():
     })
 
 
-@app.route("/api/check_token_file", methods=["GET"])
+@app.route("/api/decode", methods=["GET"])
 def check_token_file():
     # 🔑 Bảo mật bằng key
     key = request.args.get("key")
